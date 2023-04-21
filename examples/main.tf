@@ -1,9 +1,5 @@
-
-
-
 module "vpc" {
-  source = "../modules"
-
+  source                     = "../modules"
   name                       = "KubernetesNetwork"
   region                     = "us-east-1"
   cidr_block                 = "10.0.0.0/16"
@@ -13,4 +9,5 @@ module "vpc" {
 
   project     = "Kubernetes"
   environment = "Testing"
+  label_order = ["name", "environment"]
 }

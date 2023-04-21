@@ -17,7 +17,7 @@ variable "environment" {
 
 variable "repository" {
   type        = string
-  default     = "https://github.com/clouddrove/terraform-aws-vpc"
+  default     = "https://github.com/muhtarmamatov/terraform-aws-vpc.git"
   description = "Terraform current module repo"
 }
 
@@ -29,8 +29,8 @@ variable "label_order" {
 
 variable "managedby" {
   type        = string
-  default     = "hello@clouddrove.com"
-  description = "ManagedBy, eg 'CloudDrove'"
+  default     = "hello@example.com"
+  description = "ManagedBy, eg 'Administrator'"
 }
 
 variable "region" {
